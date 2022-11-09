@@ -1,0 +1,41 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: calc(1000px 1rem);
+    margin: 0 auto;
+    padding: 0 .5rem;
+    .flex{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .card{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+         div{
+            border: 3px solid gainsboro;
+            border-radius: 5px;
+        }
+          @media screen and (max-width:900px){
+                .div-3{
+                    display: none;
+                }
+            }
+            @media screen and(max-width: 720px) {
+                flex-direction: column;
+                .div-3{
+                    display: block;
+                }
+                
+            }
+        
+        }
+    }
+}
